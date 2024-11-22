@@ -1,8 +1,8 @@
 from flask import Flask, request, redirect, url_for, render_template, session, flash
 from models.user import usuarios, obtener_usuario_por_username
 
-app = Flask(__name__, template_folder='views')  # Cambiado para que apunte a 'views'
-app.secret_key = 'clave_secreta'  # Cambia esto por algo más seguro
+app = Flask(__name__, template_folder='views')
+app.secret_key = 'boa_constrictor'
 
 # Página principal
 @app.route('/')
